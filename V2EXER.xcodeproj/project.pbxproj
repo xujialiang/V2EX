@@ -9,11 +9,17 @@
 /* Begin PBXBuildFile section */
 		EBC741C21A3688D200631858 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC741C11A3688D200631858 /* main.m */; };
 		EBC741C51A3688D200631858 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC741C41A3688D200631858 /* AppDelegate.m */; };
-		EBC741C81A3688D200631858 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC741C71A3688D200631858 /* ViewController.m */; };
 		EBC741CB1A3688D200631858 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBC741C91A3688D200631858 /* Main.storyboard */; };
 		EBC741CD1A3688D200631858 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBC741CC1A3688D200631858 /* Images.xcassets */; };
 		EBC741D01A3688D200631858 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBC741CE1A3688D200631858 /* LaunchScreen.xib */; };
 		EBC741DC1A3688D300631858 /* V2EXERTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC741DB1A3688D300631858 /* V2EXERTests.m */; };
+		EBC741F61A36901700631858 /* Alamofire.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = EBC741F01A368FD800631858 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EBC741FA1A36911100631858 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC741F91A36911100631858 /* Main.swift */; };
+		EBC742061A36933300631858 /* libAsyncDisplayKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EBC742011A3692BE00631858 /* libAsyncDisplayKit.a */; };
+		EBC742221A369A0900631858 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBC742211A369A0900631858 /* SystemConfiguration.framework */; };
+		EBC742241A369A2100631858 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBC742231A369A2100631858 /* AssetsLibrary.framework */; };
+		EBC7422C1A369BD200631858 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBC7422B1A369BD200631858 /* Foundation.framework */; };
+		EBC7422E1A369F3400631858 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBC7422D1A369F3400631858 /* Photos.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,7 +30,49 @@
 			remoteGlobalIDString = EBC741BB1A3688D200631858;
 			remoteInfo = V2EXER;
 		};
+		EBC741EF1A368FD800631858 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EBC741EA1A368FD800631858 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
+			remoteInfo = Alamofire;
+		};
+		EBC741F11A368FD800631858 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EBC741EA1A368FD800631858 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
+			remoteInfo = AlamofireTests;
+		};
+		EBC741F31A368FFB00631858 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EBC741EA1A368FD800631858 /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
+			remoteInfo = Alamofire;
+		};
+		EBC742001A3692BE00631858 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EBC741FB1A3692BE00631858 /* AsyncDisplayKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 058D09AC195D04C000B7D73C;
+			remoteInfo = AsyncDisplayKit;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EBC741F51A36901000631858 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EBC741F61A36901700631858 /* Alamofire.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		EBC741BC1A3688D200631858 /* V2EXER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = V2EXER.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -32,14 +80,20 @@
 		EBC741C11A3688D200631858 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EBC741C31A3688D200631858 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EBC741C41A3688D200631858 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		EBC741C61A3688D200631858 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		EBC741C71A3688D200631858 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		EBC741CA1A3688D200631858 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EBC741CC1A3688D200631858 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		EBC741CF1A3688D200631858 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		EBC741D51A3688D200631858 /* V2EXERTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = V2EXERTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBC741DA1A3688D300631858 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EBC741DB1A3688D300631858 /* V2EXERTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = V2EXERTests.m; sourceTree = "<group>"; };
+		EBC741EA1A368FD800631858 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
+		EBC741F81A36911100631858 /* V2EXER-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "V2EXER-Bridging-Header.h"; sourceTree = "<group>"; };
+		EBC741F91A36911100631858 /* Main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
+		EBC741FB1A3692BE00631858 /* AsyncDisplayKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AsyncDisplayKit.xcodeproj; path = "AsyncDisplayKit-master-2/AsyncDisplayKit.xcodeproj"; sourceTree = "<group>"; };
+		EBC742211A369A0900631858 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		EBC742231A369A2100631858 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		EBC7422B1A369BD200631858 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EBC7422D1A369F3400631858 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +101,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBC7422E1A369F3400631858 /* Photos.framework in Frameworks */,
+				EBC742061A36933300631858 /* libAsyncDisplayKit.a in Frameworks */,
+				EBC7422C1A369BD200631858 /* Foundation.framework in Frameworks */,
+				EBC742241A369A2100631858 /* AssetsLibrary.framework in Frameworks */,
+				EBC742221A369A0900631858 /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,10 +140,11 @@
 		EBC741BE1A3688D200631858 /* V2EXER */ = {
 			isa = PBXGroup;
 			children = (
+				EBC741E51A368B7D00631858 /* 3rd */,
+				EBC741E61A368BC700631858 /* API */,
+				EBC741F71A3690F800631858 /* classes */,
 				EBC741C31A3688D200631858 /* AppDelegate.h */,
 				EBC741C41A3688D200631858 /* AppDelegate.m */,
-				EBC741C61A3688D200631858 /* ViewController.h */,
-				EBC741C71A3688D200631858 /* ViewController.m */,
 				EBC741C91A3688D200631858 /* Main.storyboard */,
 				EBC741CC1A3688D200631858 /* Images.xcassets */,
 				EBC741CE1A3688D200631858 /* LaunchScreen.xib */,
@@ -119,6 +179,68 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		EBC741E51A368B7D00631858 /* 3rd */ = {
+			isa = PBXGroup;
+			children = (
+				EBC7422D1A369F3400631858 /* Photos.framework */,
+				EBC7422B1A369BD200631858 /* Foundation.framework */,
+				EBC742231A369A2100631858 /* AssetsLibrary.framework */,
+				EBC742211A369A0900631858 /* SystemConfiguration.framework */,
+				EBC741FB1A3692BE00631858 /* AsyncDisplayKit.xcodeproj */,
+				EBC741EA1A368FD800631858 /* Alamofire.xcodeproj */,
+			);
+			path = 3rd;
+			sourceTree = "<group>";
+		};
+		EBC741E61A368BC700631858 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				EBC741E81A368BD800631858 /* Service */,
+				EBC741E71A368BC700631858 /* Model */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		EBC741E71A368BC700631858 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EBC741E81A368BD800631858 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		EBC741EB1A368FD800631858 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EBC741F01A368FD800631858 /* Alamofire.framework */,
+				EBC741F21A368FD800631858 /* AlamofireTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EBC741F71A3690F800631858 /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				EBC741F81A36911100631858 /* V2EXER-Bridging-Header.h */,
+				EBC741F91A36911100631858 /* Main.swift */,
+			);
+			path = classes;
+			sourceTree = "<group>";
+		};
+		EBC741FC1A3692BE00631858 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EBC742011A3692BE00631858 /* libAsyncDisplayKit.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,13 +248,15 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EBC741DF1A3688D300631858 /* Build configuration list for PBXNativeTarget "V2EXER" */;
 			buildPhases = (
-				EBC741B81A3688D200631858 /* Sources */,
 				EBC741B91A3688D200631858 /* Frameworks */,
+				EBC741B81A3688D200631858 /* Sources */,
 				EBC741BA1A3688D200631858 /* Resources */,
+				EBC741F51A36901000631858 /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				EBC741F41A368FFB00631858 /* PBXTargetDependency */,
 			);
 			name = V2EXER;
 			productName = V2EXER;
@@ -186,6 +310,16 @@
 			mainGroup = EBC741B31A3688D200631858;
 			productRefGroup = EBC741BD1A3688D200631858 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = EBC741EB1A368FD800631858 /* Products */;
+					ProjectRef = EBC741EA1A368FD800631858 /* Alamofire.xcodeproj */;
+				},
+				{
+					ProductGroup = EBC741FC1A3692BE00631858 /* Products */;
+					ProjectRef = EBC741FB1A3692BE00631858 /* AsyncDisplayKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				EBC741BB1A3688D200631858 /* V2EXER */,
@@ -193,6 +327,30 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		EBC741F01A368FD800631858 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = EBC741EF1A368FD800631858 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EBC741F21A368FD800631858 /* AlamofireTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = AlamofireTests.xctest;
+			remoteRef = EBC741F11A368FD800631858 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EBC742011A3692BE00631858 /* libAsyncDisplayKit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libAsyncDisplayKit.a;
+			remoteRef = EBC742001A3692BE00631858 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		EBC741BA1A3688D200631858 /* Resources */ = {
@@ -219,7 +377,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBC741C81A3688D200631858 /* ViewController.m in Sources */,
+				EBC741FA1A36911100631858 /* Main.swift in Sources */,
 				EBC741C51A3688D200631858 /* AppDelegate.m in Sources */,
 				EBC741C21A3688D200631858 /* main.m in Sources */,
 			);
@@ -240,6 +398,11 @@
 			isa = PBXTargetDependency;
 			target = EBC741BB1A3688D200631858 /* V2EXER */;
 			targetProxy = EBC741D61A3688D200631858 /* PBXContainerItemProxy */;
+		};
+		EBC741F41A368FFB00631858 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			targetProxy = EBC741F31A368FFB00631858 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -300,6 +463,10 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-l\"c++\"",
+					"-ObjC",
+				);
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -334,6 +501,10 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = (
+					"-l\"c++\"",
+					"-ObjC",
+				);
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -343,9 +514,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = V2EXER/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/system/introspection",
+					"$(SDKROOT)/usr/lib/system",
+				);
+				OTHER_LDFLAGS = (
+					"-l\"c++\"",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "V2EXER/classes/V2EXER-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -353,9 +536,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = V2EXER/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/system/introspection",
+					"$(SDKROOT)/usr/lib/system",
+				);
+				OTHER_LDFLAGS = (
+					"-l\"c++\"",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "V2EXER/classes/V2EXER-Bridging-Header.h";
 			};
 			name = Release;
 		};
