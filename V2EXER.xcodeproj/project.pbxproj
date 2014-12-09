@@ -20,6 +20,14 @@
 		EBC742241A369A2100631858 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBC742231A369A2100631858 /* AssetsLibrary.framework */; };
 		EBC7422C1A369BD200631858 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBC7422B1A369BD200631858 /* Foundation.framework */; };
 		EBC7422E1A369F3400631858 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBC7422D1A369F3400631858 /* Photos.framework */; };
+		EBC742301A36A01300631858 /* V2EXService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC7422F1A36A01300631858 /* V2EXService.swift */; };
+		EBC742321A36A12700631858 /* V2EXRequestBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC742311A36A12700631858 /* V2EXRequestBase.swift */; };
+		EBC742341A36A59F00631858 /* Defines.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC742331A36A59F00631858 /* Defines.swift */; };
+		EBC742361A36B17800631858 /* V2EXBaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC742351A36B17800631858 /* V2EXBaseModel.swift */; };
+		EBC742381A36BF3700631858 /* V2EXHotModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC742371A36BF3700631858 /* V2EXHotModel.swift */; };
+		EBC7423A1A36C01B00631858 /* V2EXMemberModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC742391A36C01B00631858 /* V2EXMemberModel.swift */; };
+		EBC7423C1A36C15100631858 /* V2EXNodeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC7423B1A36C15100631858 /* V2EXNodeModel.swift */; };
+		EBC7423E1A36CF7500631858 /* V2EXHotRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC7423D1A36CF7500631858 /* V2EXHotRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +102,14 @@
 		EBC742231A369A2100631858 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		EBC7422B1A369BD200631858 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EBC7422D1A369F3400631858 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		EBC7422F1A36A01300631858 /* V2EXService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = V2EXService.swift; sourceTree = "<group>"; };
+		EBC742311A36A12700631858 /* V2EXRequestBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = V2EXRequestBase.swift; sourceTree = "<group>"; };
+		EBC742331A36A59F00631858 /* Defines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Defines.swift; sourceTree = "<group>"; };
+		EBC742351A36B17800631858 /* V2EXBaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = V2EXBaseModel.swift; sourceTree = "<group>"; };
+		EBC742371A36BF3700631858 /* V2EXHotModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = V2EXHotModel.swift; sourceTree = "<group>"; };
+		EBC742391A36C01B00631858 /* V2EXMemberModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = V2EXMemberModel.swift; sourceTree = "<group>"; };
+		EBC7423B1A36C15100631858 /* V2EXNodeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = V2EXNodeModel.swift; sourceTree = "<group>"; };
+		EBC7423D1A36CF7500631858 /* V2EXHotRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = V2EXHotRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +220,10 @@
 		EBC741E71A368BC700631858 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EBC742351A36B17800631858 /* V2EXBaseModel.swift */,
+				EBC742371A36BF3700631858 /* V2EXHotModel.swift */,
+				EBC742391A36C01B00631858 /* V2EXMemberModel.swift */,
+				EBC7423B1A36C15100631858 /* V2EXNodeModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -211,6 +231,9 @@
 		EBC741E81A368BD800631858 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				EBC7422F1A36A01300631858 /* V2EXService.swift */,
+				EBC742311A36A12700631858 /* V2EXRequestBase.swift */,
+				EBC7423D1A36CF7500631858 /* V2EXHotRequest.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -229,6 +252,7 @@
 			children = (
 				EBC741F81A36911100631858 /* V2EXER-Bridging-Header.h */,
 				EBC741F91A36911100631858 /* Main.swift */,
+				EBC742331A36A59F00631858 /* Defines.swift */,
 			);
 			path = classes;
 			sourceTree = "<group>";
@@ -378,7 +402,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBC741FA1A36911100631858 /* Main.swift in Sources */,
+				EBC7423A1A36C01B00631858 /* V2EXMemberModel.swift in Sources */,
 				EBC741C51A3688D200631858 /* AppDelegate.m in Sources */,
+				EBC742341A36A59F00631858 /* Defines.swift in Sources */,
+				EBC742301A36A01300631858 /* V2EXService.swift in Sources */,
+				EBC742321A36A12700631858 /* V2EXRequestBase.swift in Sources */,
+				EBC7423C1A36C15100631858 /* V2EXNodeModel.swift in Sources */,
+				EBC742361A36B17800631858 /* V2EXBaseModel.swift in Sources */,
+				EBC7423E1A36CF7500631858 /* V2EXHotRequest.swift in Sources */,
+				EBC742381A36BF3700631858 /* V2EXHotModel.swift in Sources */,
 				EBC741C21A3688D200631858 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
