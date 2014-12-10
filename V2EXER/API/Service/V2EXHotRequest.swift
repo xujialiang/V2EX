@@ -12,5 +12,4 @@ class V2EXHotRequest: V2EXRequestBase {
     init(){
         super.init(method: "topics/hot.json",modelName: "V2EXHotModel");
     }
-    
 }

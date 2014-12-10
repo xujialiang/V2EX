@@ -32,8 +32,8 @@ class V2EXRequestBase:NSObject {
 
         var obj:V2EXBaseModel.Type = NSClassFromString("V2EXER."+self.modelName) as V2EXBaseModel.Type;
         var result = obj();
-        result.DataConvert(dicData);
-        return result;
+        
+        return result.DataConvert(dicData);
         
     }
     

@@ -28,6 +28,11 @@
 		EBC7423A1A36C01B00631858 /* V2EXMemberModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC742391A36C01B00631858 /* V2EXMemberModel.swift */; };
 		EBC7423C1A36C15100631858 /* V2EXNodeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC7423B1A36C15100631858 /* V2EXNodeModel.swift */; };
 		EBC7423E1A36CF7500631858 /* V2EXHotRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC7423D1A36CF7500631858 /* V2EXHotRequest.swift */; };
+		EBD9D3461A3815440096F046 /* V2EXLatestRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD9D3451A3815440096F046 /* V2EXLatestRequest.swift */; };
+		EBD9D3481A3815BE0096F046 /* V2EXLatestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD9D3471A3815BE0096F046 /* V2EXLatestModel.swift */; };
+		EBD9D34A1A38172A0096F046 /* V2EXShowModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD9D3491A38172A0096F046 /* V2EXShowModel.swift */; };
+		EBD9D34C1A3818C70096F046 /* V2EXShowRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD9D34B1A3818C70096F046 /* V2EXShowRequest.swift */; };
+		EBD9D34E1A38193A0096F046 /* V2EXMemberRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD9D34D1A38193A0096F046 /* V2EXMemberRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +115,11 @@
 		EBC742391A36C01B00631858 /* V2EXMemberModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = V2EXMemberModel.swift; sourceTree = "<group>"; };
 		EBC7423B1A36C15100631858 /* V2EXNodeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = V2EXNodeModel.swift; sourceTree = "<group>"; };
 		EBC7423D1A36CF7500631858 /* V2EXHotRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = V2EXHotRequest.swift; sourceTree = "<group>"; };
+		EBD9D3451A3815440096F046 /* V2EXLatestRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = V2EXLatestRequest.swift; sourceTree = "<group>"; };
+		EBD9D3471A3815BE0096F046 /* V2EXLatestModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = V2EXLatestModel.swift; sourceTree = "<group>"; };
+		EBD9D3491A38172A0096F046 /* V2EXShowModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = V2EXShowModel.swift; sourceTree = "<group>"; };
+		EBD9D34B1A3818C70096F046 /* V2EXShowRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = V2EXShowRequest.swift; sourceTree = "<group>"; };
+		EBD9D34D1A38193A0096F046 /* V2EXMemberRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = V2EXMemberRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,8 +232,10 @@
 			children = (
 				EBC742351A36B17800631858 /* V2EXBaseModel.swift */,
 				EBC742371A36BF3700631858 /* V2EXHotModel.swift */,
+				EBD9D3471A3815BE0096F046 /* V2EXLatestModel.swift */,
 				EBC742391A36C01B00631858 /* V2EXMemberModel.swift */,
 				EBC7423B1A36C15100631858 /* V2EXNodeModel.swift */,
+				EBD9D3491A38172A0096F046 /* V2EXShowModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -234,6 +246,9 @@
 				EBC7422F1A36A01300631858 /* V2EXService.swift */,
 				EBC742311A36A12700631858 /* V2EXRequestBase.swift */,
 				EBC7423D1A36CF7500631858 /* V2EXHotRequest.swift */,
+				EBD9D3451A3815440096F046 /* V2EXLatestRequest.swift */,
+				EBD9D34B1A3818C70096F046 /* V2EXShowRequest.swift */,
+				EBD9D34D1A38193A0096F046 /* V2EXMemberRequest.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -403,13 +418,18 @@
 			files = (
 				EBC741FA1A36911100631858 /* Main.swift in Sources */,
 				EBC7423A1A36C01B00631858 /* V2EXMemberModel.swift in Sources */,
+				EBD9D3481A3815BE0096F046 /* V2EXLatestModel.swift in Sources */,
 				EBC741C51A3688D200631858 /* AppDelegate.m in Sources */,
 				EBC742341A36A59F00631858 /* Defines.swift in Sources */,
 				EBC742301A36A01300631858 /* V2EXService.swift in Sources */,
+				EBD9D34C1A3818C70096F046 /* V2EXShowRequest.swift in Sources */,
 				EBC742321A36A12700631858 /* V2EXRequestBase.swift in Sources */,
+				EBD9D34E1A38193A0096F046 /* V2EXMemberRequest.swift in Sources */,
 				EBC7423C1A36C15100631858 /* V2EXNodeModel.swift in Sources */,
 				EBC742361A36B17800631858 /* V2EXBaseModel.swift in Sources */,
+				EBD9D34A1A38172A0096F046 /* V2EXShowModel.swift in Sources */,
 				EBC7423E1A36CF7500631858 /* V2EXHotRequest.swift in Sources */,
+				EBD9D3461A3815440096F046 /* V2EXLatestRequest.swift in Sources */,
 				EBC742381A36BF3700631858 /* V2EXHotModel.swift in Sources */,
 				EBC741C21A3688D200631858 /* main.m in Sources */,
 			);

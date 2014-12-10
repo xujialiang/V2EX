@@ -14,6 +14,6 @@ class Main: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad();
         var svc = V2EXService();
-        svc.fetchHotTopics();
+//        svc.fetchHotTopics();
     }
 }
