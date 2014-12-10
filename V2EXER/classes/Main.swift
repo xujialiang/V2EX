@@ -15,5 +15,6 @@ class Main: UIViewController {
         super.viewDidLoad();
         var svc = V2EXService();
 //        svc.fetchHotTopics();
+        
     }
 }

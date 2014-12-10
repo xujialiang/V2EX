@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "RKSwipeBetweenViewControllers.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,24 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    // Override point for customization after application launch.
+    self.window =  [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
+    
+    UIPageViewController *pageController = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:nil];
+    
+    RKSwipeBetweenViewControllers *navigationController = [[RKSwipeBetweenViewControllers alloc]initWithRootViewController:pageController];
+    
+    UIStoryboard *sb=[UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UIViewController* ctrl1= [sb instantiateViewControllerWithIdentifier:@"SID_News"];
+    UIViewController* ctrl2= [sb instantiateViewControllerWithIdentifier:@"SID_Hot"];
+    
+    ctrl1.view.backgroundColor = [UIColor redColor];
+    ctrl2.view.backgroundColor = [UIColor whiteColor];
+    [navigationController.viewControllerArray addObjectsFromArray:@[ctrl1,ctrl2]];
+    
+    self.window.rootViewController = navigationController;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

@@ -33,6 +33,9 @@
 		EBD9D34A1A38172A0096F046 /* V2EXShowModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD9D3491A38172A0096F046 /* V2EXShowModel.swift */; };
 		EBD9D34C1A3818C70096F046 /* V2EXShowRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD9D34B1A3818C70096F046 /* V2EXShowRequest.swift */; };
 		EBD9D34E1A38193A0096F046 /* V2EXMemberRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD9D34D1A38193A0096F046 /* V2EXMemberRequest.swift */; };
+		EBD9D3601A3837F30096F046 /* RKSwipeBetweenViewControllers.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD9D35F1A3837F30096F046 /* RKSwipeBetweenViewControllers.m */; };
+		EBD9D3621A383D430096F046 /* V2EXNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD9D3611A383D430096F046 /* V2EXNewsViewController.swift */; };
+		EBD9D3641A383D540096F046 /* V2EXHotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD9D3631A383D540096F046 /* V2EXHotViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,6 +123,10 @@
 		EBD9D3491A38172A0096F046 /* V2EXShowModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = V2EXShowModel.swift; sourceTree = "<group>"; };
 		EBD9D34B1A3818C70096F046 /* V2EXShowRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = V2EXShowRequest.swift; sourceTree = "<group>"; };
 		EBD9D34D1A38193A0096F046 /* V2EXMemberRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = V2EXMemberRequest.swift; sourceTree = "<group>"; };
+		EBD9D35E1A3837F30096F046 /* RKSwipeBetweenViewControllers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKSwipeBetweenViewControllers.h; sourceTree = "<group>"; };
+		EBD9D35F1A3837F30096F046 /* RKSwipeBetweenViewControllers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKSwipeBetweenViewControllers.m; sourceTree = "<group>"; };
+		EBD9D3611A383D430096F046 /* V2EXNewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = V2EXNewsViewController.swift; sourceTree = "<group>"; };
+		EBD9D3631A383D540096F046 /* V2EXHotViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = V2EXHotViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +215,7 @@
 		EBC741E51A368B7D00631858 /* 3rd */ = {
 			isa = PBXGroup;
 			children = (
+				EBD9D35D1A3837F30096F046 /* RKSwipeBetweenViewControllers */,
 				EBC7422D1A369F3400631858 /* Photos.framework */,
 				EBC7422B1A369BD200631858 /* Foundation.framework */,
 				EBC742231A369A2100631858 /* AssetsLibrary.framework */,
@@ -268,6 +276,8 @@
 				EBC741F81A36911100631858 /* V2EXER-Bridging-Header.h */,
 				EBC741F91A36911100631858 /* Main.swift */,
 				EBC742331A36A59F00631858 /* Defines.swift */,
+				EBD9D3611A383D430096F046 /* V2EXNewsViewController.swift */,
+				EBD9D3631A383D540096F046 /* V2EXHotViewController.swift */,
 			);
 			path = classes;
 			sourceTree = "<group>";
@@ -278,6 +288,15 @@
 				EBC742011A3692BE00631858 /* libAsyncDisplayKit.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		EBD9D35D1A3837F30096F046 /* RKSwipeBetweenViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				EBD9D35E1A3837F30096F046 /* RKSwipeBetweenViewControllers.h */,
+				EBD9D35F1A3837F30096F046 /* RKSwipeBetweenViewControllers.m */,
+			);
+			path = RKSwipeBetweenViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -417,6 +436,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBC741FA1A36911100631858 /* Main.swift in Sources */,
+				EBD9D3601A3837F30096F046 /* RKSwipeBetweenViewControllers.m in Sources */,
 				EBC7423A1A36C01B00631858 /* V2EXMemberModel.swift in Sources */,
 				EBD9D3481A3815BE0096F046 /* V2EXLatestModel.swift in Sources */,
 				EBC741C51A3688D200631858 /* AppDelegate.m in Sources */,
@@ -429,6 +449,8 @@
 				EBC742361A36B17800631858 /* V2EXBaseModel.swift in Sources */,
 				EBD9D34A1A38172A0096F046 /* V2EXShowModel.swift in Sources */,
 				EBC7423E1A36CF7500631858 /* V2EXHotRequest.swift in Sources */,
+				EBD9D3641A383D540096F046 /* V2EXHotViewController.swift in Sources */,
+				EBD9D3621A383D430096F046 /* V2EXNewsViewController.swift in Sources */,
 				EBD9D3461A3815440096F046 /* V2EXLatestRequest.swift in Sources */,
 				EBC742381A36BF3700631858 /* V2EXHotModel.swift in Sources */,
 				EBC741C21A3688D200631858 /* main.m in Sources */,
