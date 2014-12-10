@@ -21,7 +21,7 @@ class V2EXService: NSObject {
         var result:Array = NSArray();
         
         
-        self.fetchRequest(V2EXHotRequest<V2EXHotModel>(), success: { (JSONDIC) -> () in
+        self.fetchRequest(V2EXHotRequest(), success: { (JSONDIC) -> () in
             
             
             
@@ -73,7 +73,7 @@ class V2EXService: NSObject {
     
     
     
-    func fetchRequest<T:V2EXBaseModel>(req:V2EXRequestBase<T>, success:(JSONDIC:NSDictionary)->(), failed:(error:NSError)->()){
+    func fetchRequest(req:V2EXRequestBase, success:(JSONDIC:NSDictionary)->(), failed:(error:NSError)->()){
         
         
         Alamofire.request(.GET, req.requestUrl as String)

@@ -8,14 +8,9 @@
 
 import Foundation
 
-class V2EXHotRequest<T:V2EXBaseModel>: V2EXRequestBase<T> {
+class V2EXHotRequest: V2EXRequestBase {
     init(){
-        super.init(method: "topics/hot.json")
+        super.init(method: "topics/hot.json",modelName: "V2EXHotModel");
     }
     
-    override func DataParse(dicData:AnyObject) -> AnyObject{
-        var result = V2EXHotModel();
-        result.DataConvert(dicData);
-        return result;
-    }
 }

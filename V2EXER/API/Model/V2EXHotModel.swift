@@ -21,7 +21,8 @@ class V2EXHotModel: V2EXBaseModel {
     var last_modified:NSString = "";
     var last_touched:NSString = "";
     
-    override func DataConvert(dicdata: AnyObject) {
-        super.DataConvert(dicdata);
+    required init() {
+        super.init();
     }
+    
 }

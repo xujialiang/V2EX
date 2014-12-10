@@ -638,6 +638,7 @@
 				EBC741E11A3688D300631858 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EBC741E21A3688D300631858 /* Build configuration list for PBXNativeTarget "V2EXERTests" */ = {
 			isa = XCConfigurationList;
@@ -646,6 +647,7 @@
 				EBC741E41A3688D300631858 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

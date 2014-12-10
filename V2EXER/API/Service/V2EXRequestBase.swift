@@ -9,7 +9,7 @@
 import Foundation
 
 
-class V2EXRequestBase<T:V2EXBaseModel>:NSObject {
+class V2EXRequestBase:NSObject {
     
     var api_method:NSString!;
     
@@ -19,17 +19,22 @@ class V2EXRequestBase<T:V2EXBaseModel>:NSObject {
         }
     }
     
+    var modelName:NSString!;
 
     
-    init(method:NSString) {
+    init(method:NSString,modelName:String) {
         super.init();
         self.api_method=method;
+        self.modelName=modelName;
     }
     
     func DataParse(dicData:AnyObject) -> AnyObject{
-        var result = T();
+
+        var obj:V2EXBaseModel.Type = NSClassFromString("V2EXER."+self.modelName) as V2EXBaseModel.Type;
+        var result = obj();
         result.DataConvert(dicData);
         return result;
+        
     }
     
     

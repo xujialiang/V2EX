@@ -16,7 +16,5 @@ class V2EXMemberModel: V2EXBaseModel {
     var avatar_normal:NSString = "";
     var avatar_large:NSString = "";
     
-    override func DataConvert(dicdata: AnyObject) {
-        super.DataConvert(dicdata);
-    }
+    
 }
