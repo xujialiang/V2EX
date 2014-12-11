@@ -36,6 +36,13 @@
 		EBD9D3601A3837F30096F046 /* RKSwipeBetweenViewControllers.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD9D35F1A3837F30096F046 /* RKSwipeBetweenViewControllers.m */; };
 		EBD9D3621A383D430096F046 /* V2EXNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD9D3611A383D430096F046 /* V2EXNewsViewController.swift */; };
 		EBD9D3641A383D540096F046 /* V2EXHotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD9D3631A383D540096F046 /* V2EXHotViewController.swift */; };
+		EBD9D3781A392B380096F046 /* arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EBD9D3711A392B380096F046 /* arrow@2x.png */; };
+		EBD9D3791A392B380096F046 /* Refresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD9D3721A392B380096F046 /* Refresh.swift */; };
+		EBD9D37A1A392B380096F046 /* RefreshBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD9D3731A392B380096F046 /* RefreshBaseView.swift */; };
+		EBD9D37B1A392B380096F046 /* RefreshConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD9D3741A392B380096F046 /* RefreshConst.swift */; };
+		EBD9D37C1A392B380096F046 /* RefreshFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD9D3751A392B380096F046 /* RefreshFooterView.swift */; };
+		EBD9D37D1A392B380096F046 /* RefreshHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD9D3761A392B380096F046 /* RefreshHeaderView.swift */; };
+		EBD9D37E1A392B380096F046 /* UIScrollView+Refresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD9D3771A392B380096F046 /* UIScrollView+Refresh.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -127,6 +134,13 @@
 		EBD9D35F1A3837F30096F046 /* RKSwipeBetweenViewControllers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKSwipeBetweenViewControllers.m; sourceTree = "<group>"; };
 		EBD9D3611A383D430096F046 /* V2EXNewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = V2EXNewsViewController.swift; sourceTree = "<group>"; };
 		EBD9D3631A383D540096F046 /* V2EXHotViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = V2EXHotViewController.swift; sourceTree = "<group>"; };
+		EBD9D3711A392B380096F046 /* arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow@2x.png"; sourceTree = "<group>"; };
+		EBD9D3721A392B380096F046 /* Refresh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Refresh.swift; sourceTree = "<group>"; };
+		EBD9D3731A392B380096F046 /* RefreshBaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefreshBaseView.swift; sourceTree = "<group>"; };
+		EBD9D3741A392B380096F046 /* RefreshConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefreshConst.swift; sourceTree = "<group>"; };
+		EBD9D3751A392B380096F046 /* RefreshFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefreshFooterView.swift; sourceTree = "<group>"; };
+		EBD9D3761A392B380096F046 /* RefreshHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefreshHeaderView.swift; sourceTree = "<group>"; };
+		EBD9D3771A392B380096F046 /* UIScrollView+Refresh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Refresh.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,6 +229,7 @@
 		EBC741E51A368B7D00631858 /* 3rd */ = {
 			isa = PBXGroup;
 			children = (
+				EBD9D3701A392B380096F046 /* Refresh */,
 				EBD9D35D1A3837F30096F046 /* RKSwipeBetweenViewControllers */,
 				EBC7422D1A369F3400631858 /* Photos.framework */,
 				EBC7422B1A369BD200631858 /* Foundation.framework */,
@@ -297,6 +312,20 @@
 				EBD9D35F1A3837F30096F046 /* RKSwipeBetweenViewControllers.m */,
 			);
 			path = RKSwipeBetweenViewControllers;
+			sourceTree = "<group>";
+		};
+		EBD9D3701A392B380096F046 /* Refresh */ = {
+			isa = PBXGroup;
+			children = (
+				EBD9D3711A392B380096F046 /* arrow@2x.png */,
+				EBD9D3721A392B380096F046 /* Refresh.swift */,
+				EBD9D3731A392B380096F046 /* RefreshBaseView.swift */,
+				EBD9D3741A392B380096F046 /* RefreshConst.swift */,
+				EBD9D3751A392B380096F046 /* RefreshFooterView.swift */,
+				EBD9D3761A392B380096F046 /* RefreshHeaderView.swift */,
+				EBD9D3771A392B380096F046 /* UIScrollView+Refresh.swift */,
+			);
+			path = Refresh;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -416,6 +445,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBC741CB1A3688D200631858 /* Main.storyboard in Resources */,
+				EBD9D3781A392B380096F046 /* arrow@2x.png in Resources */,
 				EBC741D01A3688D200631858 /* LaunchScreen.xib in Resources */,
 				EBC741CD1A3688D200631858 /* Images.xcassets in Resources */,
 			);
@@ -436,8 +466,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBC741FA1A36911100631858 /* Main.swift in Sources */,
+				EBD9D37D1A392B380096F046 /* RefreshHeaderView.swift in Sources */,
+				EBD9D37C1A392B380096F046 /* RefreshFooterView.swift in Sources */,
 				EBD9D3601A3837F30096F046 /* RKSwipeBetweenViewControllers.m in Sources */,
 				EBC7423A1A36C01B00631858 /* V2EXMemberModel.swift in Sources */,
+				EBD9D3791A392B380096F046 /* Refresh.swift in Sources */,
 				EBD9D3481A3815BE0096F046 /* V2EXLatestModel.swift in Sources */,
 				EBC741C51A3688D200631858 /* AppDelegate.m in Sources */,
 				EBC742341A36A59F00631858 /* Defines.swift in Sources */,
@@ -447,9 +480,12 @@
 				EBD9D34E1A38193A0096F046 /* V2EXMemberRequest.swift in Sources */,
 				EBC7423C1A36C15100631858 /* V2EXNodeModel.swift in Sources */,
 				EBC742361A36B17800631858 /* V2EXBaseModel.swift in Sources */,
+				EBD9D37A1A392B380096F046 /* RefreshBaseView.swift in Sources */,
 				EBD9D34A1A38172A0096F046 /* V2EXShowModel.swift in Sources */,
 				EBC7423E1A36CF7500631858 /* V2EXHotRequest.swift in Sources */,
 				EBD9D3641A383D540096F046 /* V2EXHotViewController.swift in Sources */,
+				EBD9D37B1A392B380096F046 /* RefreshConst.swift in Sources */,
+				EBD9D37E1A392B380096F046 /* UIScrollView+Refresh.swift in Sources */,
 				EBD9D3621A383D430096F046 /* V2EXNewsViewController.swift in Sources */,
 				EBD9D3461A3815440096F046 /* V2EXLatestRequest.swift in Sources */,
 				EBC742381A36BF3700631858 /* V2EXHotModel.swift in Sources */,

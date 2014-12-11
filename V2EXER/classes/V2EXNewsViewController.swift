@@ -10,9 +10,12 @@ import Foundation
 
 class NewsViewController: UIViewController, ASTableViewDataSource, ASTableViewDelegate {
     
-    var tableView: ASTableView
+    var tableView: ASTableView;
+    var storeHouseRefreshControl:CBStoreHouseRefreshControl!;
+    
     required override init() {
         self.tableView = ASTableView()
+        
         
         super.init(nibName: nil, bundle: nil)
         
@@ -26,7 +29,28 @@ class NewsViewController: UIViewController, ASTableViewDataSource, ASTableViewDe
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.tableView.addHeaderWithCallback({
+            var delayInSeconds:Int64 =  1000000000  * 2
+            var popTime:dispatch_time_t = dispatch_time(DISPATCH_TIME_NOW,delayInSeconds)
+            dispatch_after(popTime, dispatch_get_main_queue(), {
+                self.tableView.reloadData()
+                self.tableView.headerEndRefreshing()
+            })
+        })
+        
+        self.tableView.addFooterWithCallback { () -> Void in
+            var delayInSeconds:Int64 =  1000000000  * 2
+            var popTime:dispatch_time_t = dispatch_time(DISPATCH_TIME_NOW,delayInSeconds)
+            dispatch_after(popTime, dispatch_get_main_queue(), {
+                self.tableView.reloadData();
+                self.tableView.footerEndRefreshing();
+            })
+        };
+        
         self.view.addSubview(self.tableView)
+        
+        
     }
     
     override func viewWillLayoutSubviews() {
@@ -55,5 +79,8 @@ class NewsViewController: UIViewController, ASTableViewDataSource, ASTableViewDe
     func tableView(tableView: UITableView!, numberOfRowsInSection section: Int) -> Int {
         return 20
     }
+    
+    
+    
     
 }
